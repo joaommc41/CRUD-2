@@ -42,20 +42,25 @@
             const cpf = document.getElementById('cpf').value;
             fetch(`pessoas`)
             .then(response => response.json())
-		window.location.reload();
+		
             .then(data => {
                 data.forEach(objeto => {
                     if(objeto.cpf === cpf) {
                         fetch(`pessoas/${objeto.id}`, {
                             method: 'DELETE'
-                        }) alert("Conta excluida com sucesso!");
-                    }else{
-			    alert("Conta não encontrada!");
-		    }
+                        })
+                    }if(cpf) {
+			 alert ('Conta apagada!')    
+            window.location.reload();
+        } else {
+            alert ('CPF não encontrado no banco de dados')
+        }
                 })
             })
 		
         }
+	    
+	    
 	   
 	</script>
 	
