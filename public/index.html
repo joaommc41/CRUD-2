@@ -47,7 +47,7 @@
             	   </div>
             	</div>
                 <a href="login.html">Login</a>
-            	<input type="button" class="btn" onclick="enviarDados()" value="Finalizar">
+            	<input type="submit" class="btn" onclick="enviarDados()" value="Finalizar">
             </form>
         </div>
     </div>
@@ -70,6 +70,7 @@
                 body: JSON.stringify({nome: nome, idade: idade, cpf: cpf})
             })
             .then(response => response.json())
+		alert("Conta criada com sucesso!");
         }
 		</script>
 	
