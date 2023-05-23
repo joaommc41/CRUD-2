@@ -47,11 +47,15 @@
                     if(objeto.cpf === cpf) {
                         fetch(`pessoas/${objeto.id}`, {
                             method: 'DELETE'
-                        })
-                    }
+                        }) alert("Conta excluida com sucesso!");
+                    }else{
+			    alert("Conta não encontrada!");
+		    }
                 })
             })
+		window.location.reload();
         }
+	   
 	</script>
 	
 	<script type="text/javascript">
