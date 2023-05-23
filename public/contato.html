@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css.css">
+    <title>Contato</title>
+</head>
+<body>
+    <div class="login-button">
+        <button><a href="bemvindo.html"><i class="fas fa-user-alt"></i>VOLTAR</a></button>
+    </div>
+
+    <main>
+        <img class="wave" src="img/wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="img/bg.svg">
+		</div>
+		<div class="login-content">
+        <div class="box" id="form">
+            <div class="form-box">
+                <h2>Contato</h2><br>
+                <form class="form" action="https://formsubmit.co/malaguetadocarmo@gmail.com" action="https://formsubmit.co/brunomessias46@gmail.com" method="POST">
+                    <fieldset>
+                        <div class="input-group">
+                            <label>NOME </label>
+                            <input type="text" id="nome" placeholder="Digite seu nome..." name="nome" autocomplete="off" required><br>
+                        </div>
+
+                        <div class="input-group">
+                            <label>SOBRENOME </label>
+                            <input type="text" id="sobrenome" placeholder="Digite seu sobrenome..." name="sobrenome" autocomplete="off" required><br>
+                        </div>
+
+                        <div class="input-group">
+                            <label>TELEFONE </label>
+                            <input type="text" class="form-control" id="telefone" placeholder="Digite seu telefone..." name="telefone" autocomplete="off" required><br>
+                        </div>
+
+                        <div class="input-group">
+                            <label>E-MAIL </label>
+                            <input type="email" id="email" placeholder="Digite seu e-mail..." name="email" autocomplete="off" required><br>
+                        </div>
+
+                        <div class="input-group">
+                            <label>ASSUNTO </label>
+                            <input type="text" id="assunto" placeholder="Digite o assunto..." name="assunto" autocomplete="off" required><br>
+                        </div>
+
+                        <div class="input-group">
+                            <label>MENSAGEM </label>
+                            <input type="text" id="mensagem" placeholder="Digite a mensagem..." name="mensagem" autocomplete="off" required><br>
+                        </div>
+
+                        <div class="input-group">
+                            <label>DEPARTAMENTO </label>
+                            <input type="text" id="departamento" placeholder="Digite seu departamento..." name="departamento" autocomplete="off" required><br>
+                        </div>
+
+                        <div class="input-group">
+                            <label>CÓPIA DE E-MAIL </label>
+                            <input type="email" id="copia" placeholder="Digite o destino..." name="copia" autocomplete="off" required><br>
+                        </div>
+
+                        <div class="input-group">
+                            <button onclick="guardaFormulario()">Imprimir</button>
+                        </div>
+
+                        <div class="input-group">
+                            <button type="submit">Enviar por E-mail</button>
+                        </div>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="imprimirDados" id="imprimir">
+           
+            <br><br>
+            <div id="nome1"></div>
+            <br />
+
+            <div id="sobrenome1"></div>
+            <br />
+
+            <div id="telefone1"></div>
+            <br /> 
+
+            <div id="email1"></div>
+            <br /> 
+
+            <div id="assunto1"></div>
+            <br /> 
+
+            <div id="mensagem1"></div>
+            <br /> 
+
+            <div id="departamento1"></div>
+            <br /> 
+
+            <div id="copia1"></div>
+            <br /> 
+        </div>
+     </div>
+    </main>
+
+    <script src="js.js"></script>
+    <script type="text/javascript">
+        $("#telefone").mask("(00) 00000-0000");
+    </script>
+            
+</body>
+</html>
