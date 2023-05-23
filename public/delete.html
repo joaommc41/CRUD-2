@@ -29,7 +29,7 @@
            		   </div>
            		</div>
                 <a href="index.html">Cadastre-se novamente</a>
-            	<input type="button" class="btn" onclick="deletarDados()" value = "Deletar">
+            	<input type="submit" class="btn" onclick="deletarDados()" value = "Deletar">
             </form>
         </div>
     </div>
@@ -48,18 +48,14 @@
                     if(objeto.cpf === cpf) {
                         fetch(`pessoas/${objeto.id}`, {
                             method: 'DELETE'
-                        })
-                    }if(cpf) {
-			 alert ('Conta apagada!')    
-            window.location.reload();
-        } else {
-            alert ('CPF não encontrado no banco de dados')
-        }
+                        }) 
+			    alert ('Conta deletada!'); 
+                    }
+			window.location.reload();
                 })
             })
 		
         }
-	    
 	    
 	   
 	</script>
